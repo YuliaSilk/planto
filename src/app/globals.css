@@ -20,3 +20,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, Inter, sans-serif;
 }
+
+.bg-plant {
+  background-image: url("/public/fon.webp"); /* Шлях до зображення у папці public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
