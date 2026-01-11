@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'wellcome to planto',
@@ -14,7 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="p-20">
+        <Image
+          src="/images/bg-plants.webp" // можна JPG або WebP
+          alt=""
+          fill
+          quality={75}
+          priority
+          className="object-cover -z-10"
+        />
         <Header />
         <main>{children}</main>
       </body>
